@@ -9,7 +9,7 @@ use warnings;
 # VERSION
 
 our $schema = [str => {
-    summary => 'A string that contains a valid JSON',
+    summary => 'A string that contains valid JSON',
     'prefilters' => ['JSON::check_decode'],
     examples => [
         {value=>'', valid=>0, summary=>'Empty string'},
