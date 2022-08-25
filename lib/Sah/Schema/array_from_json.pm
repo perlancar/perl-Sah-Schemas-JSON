@@ -11,6 +11,14 @@ use warnings;
 our $schema = [array => {
     summary => 'Array, coercible from JSON string',
     'prefilters' => ['JSON::decode_str'],
+    description => <<'_',
+
+You can use this schema if you want to accept an array, but if user supplies a
+string e.g. in a command-line script as command-line argument or option, the
+string will be coerced into array if the string contains a JSON-encoded array.
+Data will not be valid if the string does not contain valid JSON.
+
+_
     examples => [
         {value=>'', valid=>0, summary=>'Empty string is not a valid JSON'},
         {value=>'1', valid=>0, summary=>'Valid JSON but not an array'},

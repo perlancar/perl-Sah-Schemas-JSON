@@ -11,6 +11,14 @@ use warnings;
 our $schema = [hash => {
     summary => 'Hash, coerced from JSON string',
     'prefilters' => ['JSON::decode_str'],
+    description => <<'_',
+
+You can use this schema if you want to accept a hash, but if user supplies a
+string e.g. in a command-line script as command-line argument or option, the
+string will be coerced into hash if the string contains a JSON-encoded object
+(hash). Data will not be valid if the string does not contain valid JSON.
+
+_
     examples => [
         {value=>'', valid=>0, summary=>'Empty string is not a valid JSON'},
         {value=>'1', valid=>0, summary=>'Valid JSON but not a hash'},
