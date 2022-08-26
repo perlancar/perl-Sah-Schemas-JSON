@@ -12,6 +12,6 @@ package Sah::Schemas::JSON;
 
 =cut
 
-=head1 SEE ALSO
+=head1 prepend:SEE ALSO
 
 L<Sah::Schemas::Str>

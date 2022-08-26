@@ -1,3 +1,8 @@
+0.006   2022-08-26  Released-By: PERLANCAR; Urgency: medium
+
+        - Add schemas: json_str::array, json_str::hash.
+
+
 0.005   2022-08-25  Released-By: PERLANCAR; Urgency: medium
 
         - Add schema: json_or_str.
