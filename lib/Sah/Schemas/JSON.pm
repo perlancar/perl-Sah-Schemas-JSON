@@ -11,3 +11,7 @@ package Sah::Schemas::JSON;
 # ABSTRACT: Various schemas related to JSON
 
 =cut
+
+=head1 SEE ALSO
+
+L<Sah::Schemas::Str>
