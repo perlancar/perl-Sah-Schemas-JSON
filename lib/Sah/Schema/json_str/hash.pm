@@ -19,6 +19,9 @@ contains a valid JSON. In addition to that, the JSON must encode a hash
 (JavaScript object). Data will not be valid if it is not a valid JSON or if the
 JSON is not a hash.
 
+Note that unlike the `hash_from_json` schema, a hash data is not accepted by
+this schema. Data must be a string.
+
 _
     examples => [
         {value=>'', valid=>0, summary=>'Empty string is not a valid JSON'},

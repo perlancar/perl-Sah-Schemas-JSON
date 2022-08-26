@@ -18,6 +18,9 @@ valid JSON. The JSON string will not be decoded but you know that the string
 contains a valid JSON. In addition to that, the JSON must encode an array. Data
 will not be valid if it is not a valid JSON or if the JSON is not an array.
 
+Note that unlike the `array_from_json` schema, an array data is not accepted by
+this schema. Data must be a string.
+
 _
     examples => [
         {value=>'', valid=>0, summary=>'Empty string is not a valid JSON'},

@@ -18,6 +18,9 @@ string e.g. in a command-line script as command-line argument or option, the
 string will be coerced into array if the string contains a JSON-encoded array.
 Data will not be valid if the string does not contain valid JSON.
 
+Note that array data is accepted, unlike the `json_str::array` schema which only
+accepts JSON-encoded array in string form.
+
 _
     examples => [
         {value=>'', valid=>0, summary=>'Empty string is not a valid JSON'},

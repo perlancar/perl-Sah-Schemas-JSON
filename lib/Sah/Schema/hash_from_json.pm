@@ -18,6 +18,9 @@ string e.g. in a command-line script as command-line argument or option, the
 string will be coerced into hash if the string contains a JSON-encoded object
 (hash). Data will not be valid if the string does not contain valid JSON.
 
+Note that hash data is accepted, unlike the `json_str::hash` schema which only
+accepts hash in JSON-encoded string form.
+
 _
     examples => [
         {value=>'', valid=>0, summary=>'Empty string is not a valid JSON'},
