@@ -18,6 +18,9 @@ The JSON string will not be decoded (e.g. a JSON-encoded array will not beome an
 array) but you know that the string contains a valid JSON. Data will not be
 valid if the string does not contain valid JSON.
 
+See also related schema: `json_or_str`, `str::encoded_json`,
+`str::escaped_json`.
+
 _
     examples => [
         {value=>'', valid=>0, summary=>'Empty string is not a valid JSON'},
@@ -34,3 +37,9 @@ _
 
 1;
 # ABSTRACT:
+
+L<Sah::Schema::json_or_str>
+
+L<Sah::Schema::str::encoded_json>
+
+L<Sah::Schema::str::escaped_json>
