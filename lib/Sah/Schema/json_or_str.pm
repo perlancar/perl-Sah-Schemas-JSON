@@ -25,7 +25,7 @@ you want to pass a string like `null`, `true`, `false`; you have to quote it to
 `"null"`, `"true"`, `"false"` to prevent it being decoded into undef or
 boolean values.
 
-See also related schema: `str::encoded_json`, `str::escaped_json`, `json_str`.
+See also related schema: `json_str`, `str::encoded_json`, `str::escaped_json`.
 
 _
     examples => [
@@ -47,6 +47,8 @@ _
 # ABSTRACT:
 
 =head1 SEE ALSO
+
+L<Sah::Schema::json_str>
 
 L<Sah::Schema::str::encoded_json>
 
