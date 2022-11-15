@@ -38,6 +38,8 @@ _
 1;
 # ABSTRACT:
 
+=head1 SEE ALSO
+
 L<Sah::Schema::json_or_str>
 
 L<Sah::Schema::str::encoded_json>

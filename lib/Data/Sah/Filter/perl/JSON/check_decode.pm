@@ -14,6 +14,15 @@ sub meta {
         v => 1,
         summary => 'Check that value can be decoded as JSON',
         might_fail => 1,
+        examples => [
+            {value=>'', valid=>0, summary=>'Empty string is not valid JSON'},
+            {value=>'null'},
+            {value=>'[1,2,3]'},
+            {value=>'"foo"'},
+            {value=>'"foo', valid=>0, summary=>'Invalid JSON, missing closing quote'},
+            {value=>{}, valid=>0, summary=>'Will become something like "HASH(0x560142d4e5e8)" and fail because it is not valid JSON'},
+            {value=>undef, valid=>0, summary=>'Will decode empty string and fail because empty string is not valid JSON'},
+        ],
     };
 }
 
